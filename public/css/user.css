@@ -1,0 +1,83 @@
+* {
+    font-family: "Poppins", sans-serif;
+    padding: 0;
+    margin: 0;
+}
+
+/* Carousel */
+
+.carousel-item img {
+    height: 380px;
+    /* Adjust as needed */
+    object-fit: cover;
+    /* Ensures the image covers the entire container */
+    border-radius: 20px;
+    /* Customize the border radius */
+}
+
+.carousel-caption {
+    background: rgba(0, 0, 0, 0.5);
+    /* Semi-transparent background */
+    padding: 1rem;
+    /* Padding for the caption */
+    border-radius: 5px;
+    /* Rounded corners */
+}
+
+.activate {
+    color: white;
+    /* Change to your desired active color */
+    font-weight: bold;
+    /* Optional: make it bold */
+}
+
+/* Navbar */
+
+.icon-nav {
+    position: relative;
+    color: #ffffff8c;
+    font-size: 1rem;
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.icon-nav:hover {
+    transform: scale(1.2);
+    color: white;
+}
+
+.circle {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: #b8001f;
+    color: white;
+    text-align: center;
+    font-size: 12px;
+    top: 7px;
+    right: 107px;
+}
+
+section {
+    min-height: 80vh;
+}
+
+/* Keranjang Belanja */
+
+.small-img {
+    width: 300px;
+    /* Increased width for a larger image */
+    height: auto;
+    /* Maintain aspect ratio */
+    margin-right: 10px;
+    /* Space between image and text */
+}
+
+/* Style Footer */
+
+footer {
+    position: static;
+    bottom: 0;
+    background-image: linear-gradient(to right, #99f2d1, #1c3e35);
+    color: white;
+}
