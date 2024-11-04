@@ -2,7 +2,7 @@
 
 @section('content')
 <div class="row mt-3">
-    <div class="col-sm-7">
+    <div class="col-12 col-sm-7 mb-4">
         <div class="card shadow">
             <div class="card-body">
                 <h3 class="card-title">Masukan Alamat Penerima</h3>
@@ -31,7 +31,7 @@
         </div>
     </div>
 
-    <div class="col-sm-5">
+    <div class="col-12 col-sm-5">
         <div class="card border shadow">
             <div class="card-header text-white text-center p-2" style="background-color:#0D7C66;">
                 <h5 class="mb-0">Total Belanja</h5>

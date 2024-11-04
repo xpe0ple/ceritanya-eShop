@@ -31,248 +31,64 @@
   
 
 <h4 class="mt-5">Best Seller</h4>
-    <div class="content mt-3 d-flex flex-lg-wrap gap-4 mb-5">
-        <div class="card" style="width:200px">
-            <div class="card-header m-auto" style="border-radius: 5px">
-                <img src="{{asset('assets/images/cake6remo.png')}}" alt="kue1" style="width:100%;">
-            </div>
-            <div class="card-body">
-                <p class="m-0 text-justify">Kue Enak</p>
-                <p class="m-0">
-                    <!-- Star Rating -->
-            <span class="text-warning">
-                <i class="fa fa-star"></i>
-                <i class="fa fa-star"></i>
-                <i class="fa fa-star"></i>
-                <i class="fa fa-star"></i>
-                <i class="fa fa-star"></i>
-            </span>
-                </p>
-            </div>
-            <div class="card-footer d-flex flex-row justify-content-between align-items-center">
-                <p class="m-0" style="font-size: 16px; font-weight:600;">Rp.200.000</p>
-                <button class="btn btn-outline-danger" style="font-size:24px">
-                    <i class="fa-solid fa-cart-plus"></i>
-                </button>
-            </div>
-        </div>
-        <div class="card" style="width:200px">
-            <div class="card-header m-auto" style="border-radius: 5px">
-                <img src="{{asset('assets/images/cake6remo.png')}}" alt="kue1" style="width:100%;">
-            </div>
-            <div class="card-body">
-                <p class="m-0 text-justify">Kue Enak</p>
-                <p class="m-0">
-                    <!-- Star Rating -->
-            <span class="text-warning">
-                <i class="fa fa-star"></i>
-                <i class="fa fa-star"></i>
-                <i class="fa fa-star"></i>
-                <i class="fa fa-star"></i>
-                <i class="fa fa-star"></i>
-            </span>
-                </p>
-            </div>
-            <div class="card-footer d-flex flex-row justify-content-between align-items-center">
-                <p class="m-0" style="font-size: 16px; font-weight:600;">Rp.200.000</p>
-                <button class="btn btn-outline-danger" style="font-size:24px">
-                    <i class="fa-solid fa-cart-plus"></i>
-                </button>
+<div class="row mt-3 mb-5">
+    @for ($i = 0; $i < 6; $i++) <!-- Assuming a loop for demonstration -->
+        <div class="col-6 col-sm-4 col-lg-3 mb-4">
+            <div class="card">
+                <div class="card-header m-auto" style="border-radius: 5px;">
+                    <img src="{{ asset('assets/images/cake6remo.png') }}" alt="Kue Enak" class="img-fluid">
+                </div>
+                <div class="card-body">
+                    <p class="m-0 text-justify">Kue Enak</p>
+                    <p class="m-0">
+                        <span class="text-warning">
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                        </span>
+                    </p>
+                </div>
+                <div class="card-footer d-flex flex-row justify-content-between align-items-center">
+                    <p class="m-0" style="font-size: 16px; font-weight:600;">Rp.200.000</p>
+                    <button class="btn btn-outline-danger" style="font-size:24px">
+                        <i class="fa-solid fa-cart-plus"></i>
+                    </button>
+                </div>
             </div>
         </div>
-        <div class="card" style="width:200px">
-            <div class="card-header m-auto" style="border-radius: 5px">
-                <img src="{{asset('assets/images/cake6remo.png')}}" alt="kue1" style="width:100%;">
-            </div>
-            <div class="card-body">
-                <p class="m-0 text-justify">Kue Enak</p>
-                <p class="m-0">
-                    <!-- Star Rating -->
-            <span class="text-warning">
-                <i class="fa fa-star"></i>
-                <i class="fa fa-star"></i>
-                <i class="fa fa-star"></i>
-                <i class="fa fa-star"></i>
-                <i class="fa fa-star"></i>
-            </span>
-                </p>
-            </div>
-            <div class="card-footer d-flex flex-row justify-content-between align-items-center">
-                <p class="m-0" style="font-size: 16px; font-weight:600;">Rp.200.000</p>
-                <button class="btn btn-outline-danger" style="font-size:24px">
-                    <i class="fa-solid fa-cart-plus"></i>
-                </button>
-            </div>
-        </div>
-        <div class="card" style="width:200px">
-            <div class="card-header m-auto" style="border-radius: 5px">
-                <img src="{{asset('assets/images/cake6remo.png')}}" alt="kue1" style="width:100%;">
-            </div>
-            <div class="card-body">
-                <p class="m-0 text-justify">Kue Enak</p>
-                <p class="m-0">
-                    <!-- Star Rating -->
-            <span class="text-warning">
-                <i class="fa fa-star"></i>
-                <i class="fa fa-star"></i>
-                <i class="fa fa-star"></i>
-                <i class="fa fa-star"></i>
-                <i class="fa fa-star"></i>
-            </span>
-                </p>
-            </div>
-            <div class="card-footer d-flex flex-row justify-content-between align-items-center">
-                <p class="m-0" style="font-size: 16px; font-weight:600;">Rp.200.000</p>
-                <button class="btn btn-outline-danger" style="font-size:24px">
-                    <i class="fa-solid fa-cart-plus"></i>
-                </button>
-            </div>
-        </div>
-        <div class="card" style="width:200px">
-            <div class="card-header m-auto" style="border-radius: 5px">
-                <img src="{{asset('assets/images/cake6remo.png')}}" alt="kue1" style="width:100%;">
-            </div>
-            <div class="card-body">
-                <p class="m-0 text-justify">Kue Enak</p>
-                <p class="m-0">
-                    <!-- Star Rating -->
-            <span class="text-warning">
-                <i class="fa fa-star"></i>
-                <i class="fa fa-star"></i>
-                <i class="fa fa-star"></i>
-                <i class="fa fa-star"></i>
-                <i class="fa fa-star"></i>
-            </span>
-                </p>
-            </div>
-            <div class="card-footer d-flex flex-row justify-content-between align-items-center">
-                <p class="m-0" style="font-size: 16px; font-weight:600;">Rp.200.000</p>
-                <button class="btn btn-outline-danger" style="font-size:24px">
-                    <i class="fa-solid fa-cart-plus"></i>
-                </button>
-            </div>
-        </div>
-    </div>
+    @endfor
+</div>
     <h4 class="mt-5">New Product</h4>
-    <div class="content mt-3 d-flex flex-lg-wrap gap-4 mb-5 ">
-        <div class="card" style="width:200px">
-            <div class="card-header m-auto" style="border-radius: 5px">
-                <img src="{{asset('assets/images/cake6remo.png')}}" alt="kue1" style="width:100%;">
+    <div class="row mt-3 mb-5">
+        @for ($i = 0; $i < 6; $i++) <!-- Assuming a loop for demonstration -->
+            <div class="col-6 col-sm-4 col-lg-3 mb-4">
+                <div class="card">
+                    <div class="card-header m-auto" style="border-radius: 5px;">
+                        <img src="{{ asset('assets/images/cake6remo.png') }}" alt="Kue Enak" class="img-fluid">
+                    </div>
+                    <div class="card-body">
+                        <p class="m-0 text-justify">Kue Enak</p>
+                        <p class="m-0">
+                            <span class="text-warning">
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                            </span>
+                        </p>
+                    </div>
+                    <div class="card-footer d-flex flex-row justify-content-between align-items-center">
+                        <p class="m-0" style="font-size: 16px; font-weight:600;">Rp.200.000</p>
+                        <button class="btn btn-outline-danger" style="font-size:24px">
+                            <i class="fa-solid fa-cart-plus"></i>
+                        </button>
+                    </div>
+                </div>
             </div>
-            <div class="card-body">
-                <p class="m-0 text-justify">Kue Enak</p>
-                <p class="m-0">
-                    <!-- Star Rating -->
-            <span class="text-warning">
-                <i class="fa fa-star"></i>
-                <i class="fa fa-star"></i>
-                <i class="fa fa-star"></i>
-                <i class="fa fa-star"></i>
-                <i class="fa fa-star"></i>
-            </span>
-                </p>
-            </div>
-            <div class="card-footer d-flex flex-row justify-content-between align-items-center">
-                <p class="m-0" style="font-size: 16px; font-weight:600;">Rp.200.000</p>
-                <button class="btn btn-outline-danger" style="font-size:24px">
-                    <i class="fa-solid fa-cart-plus"></i>
-                </button>
-            </div>
-        </div>
-        <div class="card" style="width:200px">
-            <div class="card-header m-auto" style="border-radius: 5px">
-                <img src="{{asset('assets/images/cake6remo.png')}}" alt="kue1" style="width:100%;">
-            </div>
-            <div class="card-body">
-                <p class="m-0 text-justify">Kue Enak</p>
-                <p class="m-0">
-                    <!-- Star Rating -->
-            <span class="text-warning">
-                <i class="fa fa-star"></i>
-                <i class="fa fa-star"></i>
-                <i class="fa fa-star"></i>
-                <i class="fa fa-star"></i>
-                <i class="fa fa-star"></i>
-            </span>
-                </p>
-            </div>
-            <div class="card-footer d-flex flex-row justify-content-between align-items-center">
-                <p class="m-0" style="font-size: 16px; font-weight:600;">Rp.200.000</p>
-                <button class="btn btn-outline-danger" style="font-size:24px">
-                    <i class="fa-solid fa-cart-plus"></i>
-                </button>
-            </div>
-        </div>
-        <div class="card" style="width:200px">
-            <div class="card-header m-auto" style="border-radius: 5px">
-                <img src="{{asset('assets/images/cake6remo.png')}}" alt="kue1" style="width:100%;">
-            </div>
-            <div class="card-body">
-                <p class="m-0 text-justify">Kue Enak</p>
-                <p class="m-0">
-                    <!-- Star Rating -->
-            <span class="text-warning">
-                <i class="fa fa-star"></i>
-                <i class="fa fa-star"></i>
-                <i class="fa fa-star"></i>
-                <i class="fa fa-star"></i>
-                <i class="fa fa-star"></i>
-            </span>
-                </p>
-            </div>
-            <div class="card-footer d-flex flex-row justify-content-between align-items-center">
-                <p class="m-0" style="font-size: 16px; font-weight:600;">Rp.200.000</p>
-                <button class="btn btn-outline-danger" style="font-size:24px">
-                    <i class="fa-solid fa-cart-plus"></i>
-                </button>
-            </div>
-        </div>
-        <div class="card" style="width:200px">
-            <div class="card-header m-auto" style="border-radius: 5px">
-                <img src="{{asset('assets/images/cake6remo.png')}}" alt="kue1" style="width:100%;">
-            </div>
-            <div class="card-body">
-                <p class="m-0 text-justify">Kue Enak</p>
-                <p class="m-0">
-                    <!-- Star Rating -->
-            <span class="text-warning">
-                <i class="fa fa-star"></i>
-                <i class="fa fa-star"></i>
-                <i class="fa fa-star"></i>
-                <i class="fa fa-star"></i>
-                <i class="fa fa-star"></i>
-            </span>
-                </p>
-            </div>
-            <div class="card-footer d-flex flex-row justify-content-between align-items-center">
-                <p class="m-0" style="font-size: 16px; font-weight:600;">Rp.200.000</p>
-                <button class="btn btn-outline-danger" style="font-size:24px">
-                    <i class="fa-solid fa-cart-plus"></i>
-                </button>
-            </div>
-        </div>
-        <div class="card" style="width:200px">
-            <div class="card-header m-auto" style="border-radius: 5px">
-                <img src="{{asset('assets/images/cake6remo.png')}}" alt="kue1" style="width:100%;">
-            </div>
-            <div class="card-body">
-                <p class="m-0 text-justify">Kue Enak</p>
-                <p class="m-0">
-                    <!-- Star Rating -->
-            <span class="text-warning">
-                <i class="fa fa-star"></i>
-                <i class="fa fa-star"></i>
-                <i class="fa fa-star"></i>
-                <i class="fa fa-star"></i>
-                <i class="fa fa-star"></i>
-            </span>
-                </p>
-            </div>
-            <div class="card-footer d-flex flex-row justify-content-between align-items-center">
-                <p class="m-0" style="font-size: 16px; font-weight:600;">Rp.200.000</p>
-                <button class="btn btn-outline-danger" style="font-size:24px">
-                    <i class="fa-solid fa-cart-plus"></i>
-                </button>
-            </div>
-        </div>
+        @endfor
+    </div>
+       
 @endsection
