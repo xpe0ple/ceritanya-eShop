@@ -16,7 +16,12 @@ return new class extends Migration
             $table->string('name');
             $table->string('email')->unique();
             $table->timestamp('email_verified_at')->nullable();
-            $table->string('password');
+            $table->string('password'); // Single password column
+            $table->integer('is_admin')->default(1);
+            $table->boolean('is_member')->default(1);
+            $table->date('tgl_lahir');
+            $table->string('foto')->default('default.png');
+            $table->boolean('is_active')->default(1);
             $table->rememberToken();
             $table->timestamps();
         });
@@ -30,3 +35,4 @@ return new class extends Migration
         Schema::dropIfExists('users');
     }
 };
+

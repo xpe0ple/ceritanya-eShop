@@ -20,3 +20,5 @@ Route::get('/shop', [Controller::class, 'shop'])->name('shop');
 Route::get('transaksi', [Controller::class, 'transaksi'])->name('transaksi');
 Route::get('/contact', [Controller::class, 'contact'])->name('contact');
 Route::get('/checkOut', [Controller::class, 'checkOut'])->name('checkOut');
+
+Route::get('admin',[Controller::class, 'admin']) -> name ('admin');

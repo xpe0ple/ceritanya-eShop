@@ -1,8 +1,8 @@
 @extends('user.layout.index')
 
 @section('content')
-<div class="row mt-5">
-    <div class="col-md-3">
+<div class="row mt-5 ">
+    <div class="col-md-3 mb-3">
         <div class="card" style="width: 100%;"> 
             <div class="card-header">
                 Category

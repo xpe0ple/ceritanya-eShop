@@ -6,13 +6,13 @@
 
 /* Carousel */
 
+.carousel-inner {
+    border-radius: 20px;
+}
+
 .carousel-item img {
     height: 380px;
-    /* Adjust as needed */
     object-fit: cover;
-    /* Ensures the image covers the entire container */
-    border-radius: 20px;
-    /* Customize the border radius */
 }
 
 .carousel-caption {
@@ -80,4 +80,34 @@ footer {
     bottom: 0;
     background-image: linear-gradient(to right, #99f2d1, #1c3e35);
     color: white;
+}
+
+/* Aside Admin */
+.sidebar {
+    position: fixed;
+    width: 250px;
+    background-color: #1c3e35;
+    height: 100vh;
+}
+
+.sidebar a {
+    text-decoration: none;
+    color: white;
+}
+
+.sidebar li {
+    list-style-type: none;
+}
+
+.sidebar li:hover {
+    background-color: white;
+    border-radius: 10px;
+    margin: 0;
+}
+
+.sidebar h5 {
+    font-size: 24px;
+    font-weight: 800;
+    color: white;
+    text-align: center;
 }

@@ -21,7 +21,8 @@ class Controller extends BaseController
         return view ('user.page.shop',[
             'title' => 'Shop',
         ]);
-    }    public function transaksi ()
+    }    
+    public function transaksi ()
     {
         return view ('user.page.transaksi',[
             'title' => 'Transaksi',
@@ -37,6 +38,12 @@ class Controller extends BaseController
     {
         return view ('user.page.checkOut',[
             'title' => 'Check Out',
+        ]);
+    }
+    public function admin ()
+    {
+        return view ('admin.layout.index', [
+            'title' => 'Admin'
         ]);
     }
 }
